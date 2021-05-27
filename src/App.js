@@ -1,7 +1,10 @@
 //import logo from './logo.svg';
 import './App.css';
+import "./App.css";
+import MenuItem from "./components/MenuItem";
 import "./config/Connection";
 
+import Home from "./pages/Home";
 function App() {
   return (
     <div className="App">
@@ -9,6 +12,8 @@ function App() {
         <h1>App RIA</h1>
       </header>
     </div>
+    //<MenuItem listing/>
+    <Home></Home>
   );
 }
 

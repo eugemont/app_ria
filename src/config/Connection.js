@@ -1,15 +1,23 @@
-import $ from 'jquery';
+var AuthorizationVar = "5bd79d3a420b3a880e1688b0272906af2c8f86a3";
+function getDataFromText(ingredientsVar) {
+  var axios = require("axios").default;
 
-var query = '3lb carrots and a chicken sandwich'
-$.ajax({
-    method: 'GET',
-    url: 'https://api.calorieninjas.com/v1/nutrition?query=' + query,
-    headers: { 'X-Api-Key': 'N5xIANX5zvuzK2mWLM62bA==wQce0nw8aDB4O0FO'},
-    contentType: 'application/json',
-    success: function(result) {
-        console.log(result);
+  var options = {
+    method: "GET",
+    url: "https://api.calorieninjas.com/v1/nutrition",
+    params: { query: ingredientsVar },
+    headers: {
+      "X-Api-Key": AuthorizationVar,
     },
-    error: function ajaxError(jqXHR) {
-        console.error('Error: ', jqXHR.responseText);
-    }
-});
+  };
+  axios
+    .request(options)
+    .then(function (response) {
+      console.log(response.data);
+      return JSON.parse(response.data);
+    })
+    .catch(function (error) {
+      console.error(error);
+      return error;
+    });
+}
