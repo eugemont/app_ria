@@ -6,7 +6,7 @@ export class TextContainer extends Component {
   render() {
     return (
       <div className="container">
-        <h1>{this.props.text}</h1>
+        <h2>{this.props.text}</h2>
       </div>
     );
   }
