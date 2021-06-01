@@ -1,4 +1,5 @@
-var AuthorizationVar = "5bd79d3a420b3a880e1688b0272906af2c8f86a3";
+//var AuthorizationVar = "5bd79d3a420b3a880e1688b0272906af2c8f86a3";
+var AuthorizationVar = "N5xIANX5zvuzK2mWLM62bA==wQce0nw8aDB4O0FO";
 function getDataFromText(ingredientsVar) {
   var axios = require("axios").default;
 
