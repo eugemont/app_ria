@@ -1,0 +1,30 @@
+.grid-container {
+  display: grid;
+  height: 350px;
+  width: 820px;
+  align-content: center;
+  grid-template-columns: 50% 50%;
+  grid-gap: 15px;
+  padding: 0px 0px;
+}
+
+.column {
+    padding: 0px 0px;
+  }
+
+#right{
+    text-align: left;
+}
+
+#left{
+    text-align: right;
+}
+
+p{
+  font-size: 19px;
+}
+
+.column img {
+    width: 400px;
+    height: auto;
+}

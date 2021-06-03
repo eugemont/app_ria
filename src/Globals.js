@@ -3,17 +3,25 @@ import { createGlobalStyle } from "styled-components";
 var textHome =
   "Con CaloRIA puedes conocer la información nutricional de todas tus comidas, ¡con tan solo un click!";
 
-var nueva = "Escribe tu receta y CaloRIA se encargará de analizar cada uno de los ingredientes por separado";
+var tit1 = "";
+var txt1 = "Calcular los nutrientes de tu plato nunca fue tan fácil. Escribe tu receta, nombre del plato o cualquier oración y CaloRIA se encargará de analizar cada uno de los ingredientes por separado";
+var txt2 = "Nuestra aplicación ofrece una calculadora de calorías, grasas, colesterol, fibra, sodio, azúcares y proteína";
+var txt3 = "Si deseas calcular tus comidas en determinadas porciones puedes agregar cantidades en gramos, tazas, libras o la unidad de medida que desees. \n El valor utilizado por defecto son 100g.";
+var txt4 = "No solo calculamos ingredientes individuales, sino también platos completos, platos de tu cadena de restaurantes favorita o artículos de marcas de alimentos";
 
 export default {
   textHome,
-  nueva,
+  txt1,
+  txt2,
+  txt3,
+  txt4
 };
 
 export const GlobalStyles = createGlobalStyle`
   html, body {
     margin: 0;
     padding: 0;
+
   }
   *, *::after, *::before {
     box-sizing: border-box;
@@ -22,7 +30,8 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: ${({ theme }) => theme.primaryDark};
+    overflow: auto;
+    background: #b8e467;
     color: ${({ theme }) => theme.primaryLight};
     height: 100vh;
     text-rendering: optimizeLegibility;
