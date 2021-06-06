@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+.charts_orb {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: arial;
+  color: white;
+}
+.charts_orb .orb {
+  padding: 20px;
+}
+.charts_orb .orb .orb_graphic {
+  position: relative;
+}
+.charts_orb .orb .orb_graphic .orb_value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.charts_orb .orb .orb_label {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
+}
+.charts_orb svg {
+  width: 110px;
+  height: 110px;
+}
+.charts_orb svg circle {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-dasharray: 314.16, 314.16;
+  stroke-width: 2;
+  fill: transparent;
+  r: 50;
+  cx: 55;
+  cy: 55;
+}
+.charts_orb svg circle.fill {
+  stroke: #d3d3d3;
+}
+.charts_orb svg circle.progress {
+  stroke: #ff6b00;
+  transition: stroke-dashoffset 0.35s;
+  stroke-dashoffset: 214.16;
+  -webkit-animation: NAME-YOUR-ANIMATION 1.5s forwards;
+  -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+  0% {
+    stroke-dashoffset: 314.16;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.card {
+  resize: both;
+  overflow: auto;
+  background: #383a3f;
+  font-family: "Varela Round", sans-serif;
+  background: #1f2124;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: 50px 20px 20px 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  /* 1/3 minus the margins (20+20) */
+  padding: 20px;
+  text-align: center;
+  color: white;
+  float: left;
+}
+
+.food-name {
+  font-size: 4em;
+}

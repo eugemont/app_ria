@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Caracteristic from "./Caracteristic";
-import "./CaloriesPanel.module.css";
+import "./CaloriesPanel.css";
 
 export class CaloriesPanel extends Component {
   render() {
@@ -8,18 +8,18 @@ export class CaloriesPanel extends Component {
       <div className="card ">
         <div>
           <section className="food-name">Rice</section>
-          <section className="charts_orb content">
-            <div className="row">
-              <Caracteristic className="col-sm " number={1000} />
-              <Caracteristic className="col-sm" number={54} />
-              <Caracteristic className="col-sm" number={54} />
+          <section className="charts_orb">
+            <div class="row">
+              <Caracteristic number={1000} />
+              <Caracteristic number={54} />
+              <Caracteristic number={54} />
             </div>
-            <div className="row">
-              <Caracteristic className="col-sm " number={20} />
-              <Caracteristic className="col-sm " number={4234} />
+            <div class="row">
+              <Caracteristic className="col-sm " number={54} />
+              <Caracteristic className="col-sm " number={54} />
               <Caracteristic className="col-sm " number={54} />
             </div>
-            <div className="row row-md-offset-50">
+            <div class="row">
               <Caracteristic className="col-sm " number={54} />
               <Caracteristic className="col-sm " number={54} />
               <Caracteristic className="col-sm " number={54} />
