@@ -27,10 +27,11 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    display: flex;
+    display: -webkit-box;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    overflow: hidden;
+    overflow-y: scroll;
     background: #b8e467;
     color: ${({ theme }) => theme.primaryLight};
     height: 100vh;
