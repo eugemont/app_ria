@@ -52,9 +52,21 @@
   stroke: #ff6b00;
   transition: stroke-dashoffset 0.35s;
   stroke-dashoffset: 214.16;
+  animation: NAME-YOUR-ANIMATION 1.5s forwards;
+  animation-timing-function: linear;
   -webkit-animation: NAME-YOUR-ANIMATION 1.5s forwards;
   -webkit-animation-timing-function: linear;
 }
+
+@keyframes NAME-YOUR-ANIMATION {
+  0% {
+    stroke-dashoffset: 314.16;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 @-webkit-keyframes NAME-YOUR-ANIMATION {
   0% {
     stroke-dashoffset: 314.16;
@@ -72,7 +84,6 @@
   background: #1f2124;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
-  margin: 50px 20px 20px 20px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -84,8 +95,14 @@
   text-align: center;
   color: white;
   float: left;
+  z-index: -1;
 }
 
 .food-name {
   font-size: 4em;
+}
+
+.card {
+  margin-top: 3%;
+  margin-bottom: 2%;
 }

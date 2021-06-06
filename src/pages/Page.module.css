@@ -1,13 +1,21 @@
 .page-style {
   width: 100%;
   height: 100%;
-  padding-left: 5%;
-  padding-right: 10%;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+.pruebaedwin {
+  width: 100%;
+  height: 100%;
+  padding-right: 15%;
+  padding-left: 15%;
 }
 
 .page-section {
   width: 100%;
   height: 100%;
+  margin-left: -130rem;
 }
 
 .scrollable {

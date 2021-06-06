@@ -5,8 +5,13 @@ import CountUp from "react-countup";
 
 export class Caracteristic extends Component {
   render() {
+    let numbDecimal = 0;
+    if (this.props.number % 1 != 0) {
+      numbDecimal = 1;
+    }
+
     return (
-      <article className="orb">
+      <article className="orb col">
         <div className="orb_graphic">
           <svg>
             <circle className="fill"></circle>
@@ -18,9 +23,10 @@ export class Caracteristic extends Component {
             end={this.props.number}
             duration={2}
             separator=""
+            decimals={numbDecimal}
           />
         </div>
-        <div className="orb_label">Calorias</div>
+        <div className="orb_label">{this.props.dataname}</div>
       </article>
     );
   }

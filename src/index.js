@@ -2,12 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Globals";
-import { translateEsToEng } from "./config/Connection";
 import "./index.css";
 import App from "./App";
 
-console.log("va a hacer algo");
-translateEsToEng();
 ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function

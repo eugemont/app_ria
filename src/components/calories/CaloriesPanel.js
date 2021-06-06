@@ -4,27 +4,69 @@ import "./CaloriesPanel.css";
 
 export class CaloriesPanel extends Component {
   render() {
+    const {
+      foodName,
+      foodsize,
+      caloria,
+      carbohidrato,
+      colesterol,
+      grasSatu,
+      grasTotal,
+      fibra,
+      potasio,
+      proteina,
+      sodio,
+      azucar,
+    } = this.props;
+
     return (
       <div className="card ">
         <div>
-          <section className="food-name">Rice</section>
-          <section className="charts_orb">
-            <div class="row">
-              <Caracteristic number={1000} />
-              <Caracteristic number={54} />
-              <Caracteristic number={54} />
-            </div>
-            <div class="row">
-              <Caracteristic className="col-sm " number={54} />
-              <Caracteristic className="col-sm " number={54} />
-              <Caracteristic className="col-sm " number={54} />
-            </div>
-            <div class="row">
-              <Caracteristic className="col-sm " number={54} />
-              <Caracteristic className="col-sm " number={54} />
-              <Caracteristic className="col-sm " number={54} />
-            </div>
-          </section>
+          <section className="food-name">{foodName.toUpperCase()}</section>
+          <section className="food-size">{foodsize + " gramos"}</section>
+          <div className="charts_orb  row">
+            <Caracteristic number={caloria} dataname="Calorías" />
+            <Caracteristic number={carbohidrato} dataname="Carbohidratos" />
+            <Caracteristic number={colesterol} dataname="Colesterol" />
+            <Caracteristic
+              className="col-sm "
+              number={grasSatu}
+              dataname="Grasas saturadas"
+            />
+            <Caracteristic
+              className="col-sm "
+              number={grasTotal}
+              dataname="Grasas totales"
+            />
+          </div>
+
+          <div className="charts_orb row">
+            <Caracteristic
+              className="col-sm "
+              number={fibra}
+              dataname="Fibras"
+            />
+            <Caracteristic
+              className="col-sm "
+              number={potasio}
+              dataname="Potasio"
+            />
+            <Caracteristic
+              className="col-sm "
+              number={proteina}
+              dataname="Proteínas"
+            />
+            <Caracteristic
+              className="col-sm "
+              number={sodio}
+              dataname="Sodio"
+            />
+            <Caracteristic
+              className="col-sm "
+              number={azucar}
+              dataname="Azucares"
+            />
+          </div>
         </div>
       </div>
     );

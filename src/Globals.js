@@ -62,4 +62,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.primaryHover};
     text-decoration: none;
   }
+  #root{
+    width:100%
+  }
 `;
