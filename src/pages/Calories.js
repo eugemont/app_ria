@@ -12,50 +12,7 @@ export class Calories extends Component {
     super(props);
     this.state = {
       data: null,
-      foodList: [
-        <CaloriesPanel
-          key={1}
-          foodName={"test"}
-          caloria={100}
-          carbohidrato={100}
-          colesterol={100}
-          grasSatu={100}
-          grasTotal={100}
-          fibra={100}
-          potasio={100}
-          proteina={100}
-          sodio={100}
-          azucar={100}
-        />,
-        <CaloriesPanel
-          key={1}
-          foodName={"test"}
-          caloria={100}
-          carbohidrato={100}
-          colesterol={100}
-          grasSatu={100}
-          grasTotal={100}
-          fibra={100}
-          potasio={100}
-          proteina={100}
-          sodio={100}
-          azucar={100}
-        />,
-        <CaloriesPanel
-          key={1}
-          foodName={"test"}
-          caloria={100}
-          carbohidrato={100}
-          colesterol={100}
-          grasSatu={100}
-          grasTotal={100}
-          fibra={100}
-          potasio={100}
-          proteina={100}
-          sodio={100}
-          azucar={100}
-        />,
-      ],
+      foodList: [],
     };
     this.handleOnClick = this.handleOnClick.bind(this);
     this.handleCallback = this.handleCallback.bind(this);
@@ -124,6 +81,7 @@ export class Calories extends Component {
           }}
         >
           {this.state.foodList}
+          
         </div>
       </div>
     );
