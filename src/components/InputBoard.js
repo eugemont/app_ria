@@ -44,7 +44,7 @@ export class InputBoard extends Component {
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    const treatmojis = ["🍬", "🍫", "🍭", "🍡", "🍩", "🍪", "🍒"];
+    const treatmojis = ["🍌","🥑","🥦","🍎","🍋","🥯","🍗","🥓","🧇","🍕","🍝","🌭","🍪","🍩","🧁","🥟","🍤","🥗","🥪","🍳","🍔","🥒","🍉","🌽"];
     const treats = [];
     const radius = 15;
 
@@ -186,7 +186,7 @@ export class InputBoard extends Component {
       if (treats.length > 40) {
         return;
       }
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 70; i++) {
         treats.push(createTreat());
       }
     }
