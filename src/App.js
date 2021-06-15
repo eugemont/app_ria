@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 //import de Home
-import { Home, Calories, Recipes } from "./pages";
+import { Home, Calories, Recipes, About } from "./pages";
 
 import { ThemeProvider } from "styled-components";
 import { MenuItem } from "./components/menu";
@@ -36,7 +36,7 @@ function App() {
     {
       name: "Contactenos",
       image: "📩",
-      page: "asdasdasdasdasd ",
+      page: <About />,
     },
   ];
   useOnClickOutside(node, () => setOpen(false));

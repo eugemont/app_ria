@@ -5,8 +5,6 @@ import { getDataFromText } from "../config/Connection";
 
 import "./Page.module.css";
 
-import Globals from "../Globals.js";
-
 export class Calories extends Component {
   constructor(props) {
     super(props);
@@ -79,8 +77,8 @@ export class Calories extends Component {
           style={{
             top: "50%",
             left: "50%",
-            /* bring your own prefixes */
-            transform: "translate(10%, -50%)",
+            /* bring your own prefixes
+            transform: "translate(10%, -50%)", */
             /*
             width: "100%",
             height: "100%",

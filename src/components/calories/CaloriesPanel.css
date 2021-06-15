@@ -46,10 +46,10 @@
   cy: 55;
 }
 .charts_orb svg circle.fill {
-  stroke: #d3d3d3;
+  stroke: #2e2b2b;
 }
 .charts_orb svg circle.progress {
-  stroke: #ff6b00;
+  stroke: #ffffff;
   transition: stroke-dashoffset 0.35s;
   stroke-dashoffset: 214.16;
   animation: NAME-YOUR-ANIMATION 1.5s forwards;
@@ -79,9 +79,9 @@
 .card {
   resize: both;
   overflow: auto;
-  background: #383a3f;
+  background: #ffffff;
   font-family: "Varela Round", sans-serif;
-  background: #1b4018;
+  background: #90C038;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   width: -webkit-max-content;
@@ -99,7 +99,12 @@
 }
 
 .food-name {
+  height: auto;
   font-size: 4em;
+}
+
+.food-size{
+  height: auto;
 }
 
 .card {

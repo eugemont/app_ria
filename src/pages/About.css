@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+*,
+*::before,
+*::after{
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+/*Section used for centering process*/
+.acordiones {
+  width: 100%;
+  height: 100vh;
+  /*background-color: #000000;*/
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.accordion-item{
+  /*background-color: #000000;*/
+  border-style: solid;
+  border-radius: .6rem;
+}
+
+.accordion-item hr{
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.accordion-link{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  /*background-color: #000000;*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.accordion-link h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight:300;
+  font-size: 20px;
+  margin-left: 12px;
+  color: #FFFFFF;
+}
+
+.accordion-link i{
+  color: #FFFFFF;
+  padding: .5rem;
+  
+}
+
+.accordion-link ul{
+  display:flex;
+  align-items: flex-end;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+.accordion-link li{
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  padding: 0 0 1px 5px;
+}
+
+.accordion-link div{
+  display: flex;
+}
+
+.accordion-link .ion-md-arrow-down{
+  display: none;
+}
+
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #b8e467;
+  transition: max-height 650ms;
+}
+
+
+
+.answer p{
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 2rem;
+  
+}
+
+.accordion-item:target .answer{
+  max-height: 100rem;
+}
+
+.accordion-item:target .accordion-link .ion-md-arrow-forward{
+  display: none
+}
+
+.accordion-item:target .accordion-link .ion-md-arrow-down{
+  display: block;
+}
+
+#question1{
+    background-color: #AADF49;
+}
+#question2{
+    background-color: #A6DD40;
+}
+#question3{
+    background-color: #A5DB40;
+}
+#question4{
+    background-color: #A3D83F;
+}
+#question5{
+    background-color: #9FD33D;
+}
+#question6{
+    background-color: #9BCE3C;
+}
+#question7{
+    background-color: #97C93A;
+}
+#question8{
+    background-color: #96C73A;
+}
+#question9{
+    background-color: #94C539;
+}
+#question10{
+    background-color: #90C038;
+}
+
+#foto {
+  max-width: 40rem;
+  height: auto;
+}

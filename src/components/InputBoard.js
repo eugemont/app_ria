@@ -229,6 +229,7 @@ export class InputBoard extends Component {
   //Clase para
   render() {
     return (
+  
       <div
         className="center-board"
         style={{
@@ -250,6 +251,7 @@ export class InputBoard extends Component {
             Aceptar
           </button>
         </div>
+
       </div>
     );
   }
