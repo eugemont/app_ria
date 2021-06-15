@@ -61,7 +61,7 @@ export class Calories extends Component {
     if (this.props.newData !== undefined) {
       description = this.props.newData;
     } else {
-      description = "Describe your ingredients";
+      description = "Escribe tus ingredientes!";
     }
 
     return (
