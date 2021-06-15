@@ -9,6 +9,7 @@ export class MenuItem extends Component {
   selectItem(selectedItem, page) {
     console.log("Ejecuta algo ");
     console.log(page);
+
     selectedItem(page);
   }
 

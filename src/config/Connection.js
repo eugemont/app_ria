@@ -3,6 +3,7 @@ import axios from "axios";
 
 var AuthorizationVar = "N5xIANX5zvuzK2mWLM62bA==wQce0nw8aDB4O0FO";
 
+var HerokuKeyApi= "19671b72-d1cc-49aa-844f-868ebc5ae15a";
 export const getDataFromText = (ingredientsVar) => {
   return new Promise(function (resolver, rechazar) {
     var axios = require("axios").default;
