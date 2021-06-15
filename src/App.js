@@ -12,7 +12,7 @@ import FocusLock from "react-focus-lock";
 
 function App() {
   const [open, setOpen] = useState(false);
-  const [selection, setSelection] = useState();
+  const [selection, setSelection] = useState(<Home />);
 
   const node = useRef();
   const menuId = "main-menu";

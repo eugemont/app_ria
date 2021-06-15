@@ -23,6 +23,7 @@ const Recipes = (props) => (
           rawIngredients = rawIngredients + "\n" + item;
           return <h6>{item}</h6>;
         });
+        onlyOneClick = false;
         return (
           <div
             key={recipe.id}
