@@ -25,3 +25,30 @@ export const getDataFromText = (ingredientsVar) => {
       });
   });
 };
+
+
+var url4 = "https://es.wikipedia.org/w/api.php?action=query&origin=*&titles="
+var url4_2 = "&prop=extracts&format=json&exintro=1"
+
+export const getDataFromWikipedia = (data) => {
+  return new Promise(function (resolver, rechazar) {
+    var axios = require("axios").default;
+    var options = {
+      method: "GET",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      url: url4 + data + url4_2
+    };
+    axios
+      .request(options)
+      .then(function (response) {
+        resolver(response);
+      })
+      .catch(function (error) {
+        console.error(error);
+        rechazar(error);
+      });
+  });
+};

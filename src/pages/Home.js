@@ -11,27 +11,20 @@ import foto2 from "../assets/tabla.png";
 import foto3 from "../assets/plato.png";
 import foto4 from "../assets/textdemo.jpg";
 import Globals from "../Globals";
-import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 
 export class home extends Component {
   render() {
     return (
       <React.StrictMode>
-        <Zoom>
-          <ImageContainer link={logo}></ImageContainer>
-        </Zoom>
-        <Background />
-        <br></br>
-        <br></br>
-        <Zoom>
-          <ImageContainer link={logo}></ImageContainer>
-        </Zoom>
+        <ImageContainer link={logo}></ImageContainer>
         <TextContainer text={Globals.textHome}></TextContainer>
         <br></br>
         <br></br>
-        <Fade left>
-          <TextImgL imagen={foto1} titulo="Fácil de usar" parrafo={Globals.txt1}></TextImgL>
+        <br></br>
+        <br></br>
+        <Fade direction="left">
+          <TextImgL imagen={foto1} titulo="Fácil de usar" parrafo={Globals.txt1} direccion="left"></TextImgL>
         </Fade>
         <Fade right>
           <TextImgR imagen={foto2} titulo="Variedad de Cálculos" parrafo={Globals.txt2}></TextImgR>

@@ -5,11 +5,12 @@ export class TextImgL extends Component {
     render() {
         return (
             <React.StrictMode>
+                <section className="grilla">
                 <div class="grid-container">
-                <div className="column">
+                <div className="column area-1">
                     <img src={this.props.imagen}></img>
                 </div>
-                <div className="column" id="texto">
+                <div className="column area-2" id="texto">
                     <div className="split-item-content">
                         <h3 className="mt-0 mb-12" id="right">
                             {this.props.titulo}
@@ -20,6 +21,7 @@ export class TextImgL extends Component {
                     </div>
                 </div>
                 </div>
+                </section>
             </React.StrictMode>
         )
     }

@@ -5,8 +5,6 @@ import { getDataFromText } from "../config/Connection";
 
 import "./Page.module.css";
 
-import Globals from "../Globals.js";
-
 export class Calories extends Component {
   constructor(props) {
     super(props);

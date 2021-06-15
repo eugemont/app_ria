@@ -100,7 +100,12 @@
 }
 
 .food-name {
+  height: auto;
   font-size: 4em;
+}
+
+.food-size{
+  height: auto;
 }
 
 .card {

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 //import de Home
-import { Home, Calories } from "./pages";
+import { Home, Calories, About } from "./pages";
 
 import { ThemeProvider } from "styled-components";
 import { MenuItem } from "./components/menu";
@@ -24,7 +24,7 @@ let itemList = [
   {
     name: "Contactenos",
     image: "📩",
-    page: "asdasdasdasdasd ",
+    page: <About />,
   },
 ];
 
