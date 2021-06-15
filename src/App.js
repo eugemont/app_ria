@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 //import de Home
-import { Home, Calories } from "./pages";
+import { Home, Calories, Recipes } from "./pages";
 
 import { ThemeProvider } from "styled-components";
 import { MenuItem } from "./components/menu";
@@ -10,31 +10,35 @@ import { theme } from "./theme";
 import { Burger, Menu } from "./components";
 import FocusLock from "react-focus-lock";
 
-let itemList = [
-  {
-    name: "Inicio",
-    image: "💁🏻‍♂️",
-    page: <Home />,
-  },
-  {
-    name: "Calcular Calorias",
-    image: "💸",
-    page: <Calories />,
-  },
-  {
-    name: "Contactenos",
-    image: "📩",
-    page: "asdasdasdasdasd ",
-  },
-];
-
 function App() {
   const [open, setOpen] = useState(false);
   const [selection, setSelection] = useState();
 
   const node = useRef();
   const menuId = "main-menu";
-
+  let itemList = [
+    {
+      name: "Inicio",
+      image: "💁🏻‍♂️",
+      page: <Home />,
+    },
+    {
+      name: "Calcular Calorias",
+      image: "💸",
+      page: <Calories />,
+    },
+    ,
+    {
+      name: "Recetas",
+      image: "📩",
+      page: <Recipes menu={setSelection} />,
+    },
+    {
+      name: "Contactenos",
+      image: "📩",
+      page: "asdasdasdasdasd ",
+    },
+  ];
   useOnClickOutside(node, () => setOpen(false));
 
   return (

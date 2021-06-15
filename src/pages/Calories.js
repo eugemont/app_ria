@@ -59,11 +59,20 @@ export class Calories extends Component {
   };
 
   render() {
+    let description;
+    if (this.props.newData !== undefined) {
+      description = this.props.newData;
+    } else {
+      description = "Describe your ingredients";
+    }
+
     return (
       <div>
         <InputBoard
+          id="inputData"
           parentCallback={this.handleCallback}
           onClickCallback={this.handleOnClick}
+          text={description}
         ></InputBoard>
         <div
           className="page-section container"
@@ -81,7 +90,6 @@ export class Calories extends Component {
           }}
         >
           {this.state.foodList}
-          
         </div>
       </div>
     );

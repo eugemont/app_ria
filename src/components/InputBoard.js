@@ -9,7 +9,7 @@ export class InputBoard extends Component {
     super(props);
     this.state = {
       data: null,
-      html: "Edit <b>me</b> !",
+      html: this.props.text,
     };
     this.cargarBoton = this.cargarBoton.bind(this);
   }
@@ -27,8 +27,6 @@ export class InputBoard extends Component {
   };
 
   cargarBoton() {
-    console.clear();
-
     let width = window.innerWidth;
     let height = window.innerHeight;
     const body = document.body;
@@ -44,7 +42,32 @@ export class InputBoard extends Component {
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    const treatmojis = ["🍌","🥑","🥦","🍎","🍋","🥯","🍗","🥓","🧇","🍕","🍝","🌭","🍪","🍩","🧁","🥟","🍤","🥗","🥪","🍳","🍔","🥒","🍉","🌽"];
+    const treatmojis = [
+      "🍌",
+      "🥑",
+      "🥦",
+      "🍎",
+      "🍋",
+      "🥯",
+      "🍗",
+      "🥓",
+      "🧇",
+      "🍕",
+      "🍝",
+      "🌭",
+      "🍪",
+      "🍩",
+      "🧁",
+      "🥟",
+      "🍤",
+      "🥗",
+      "🥪",
+      "🍳",
+      "🍔",
+      "🥒",
+      "🍉",
+      "🌽",
+    ];
     const treats = [];
     const radius = 15;
 
@@ -216,13 +239,14 @@ export class InputBoard extends Component {
         }}
       >
         <ContentEditable
+          id="contentEditable"
           className="board"
           html={this.state.html}
           disabled={false} // use true to disable edition
           onChange={this.handleChange}
         ></ContentEditable>
         <div className="treat-wrapper">
-          <button className="treat-button" onClick={this.onTrigger}>
+          <button id="boton" className="treat-button" onClick={this.onTrigger}>
             Aceptar
           </button>
         </div>

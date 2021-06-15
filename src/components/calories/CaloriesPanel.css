@@ -30,7 +30,6 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 1em;
-
 }
 .charts_orb svg {
   width: 110px;
@@ -82,7 +81,7 @@
   overflow: auto;
   background: #383a3f;
   font-family: "Varela Round", sans-serif;
-  background: #1f2124;
+  background: #1b4018;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   width: -webkit-max-content;
