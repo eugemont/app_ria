@@ -19,12 +19,12 @@ function App() {
   let itemList = [
     {
       name: "Inicio",
-      image: "💁🏻‍♂️",
+      image: "🏠",
       page: <Home />,
     },
     {
-      name: "Calcular Calorias",
-      image: "💸",
+      name: "Calcular Nutrientes",
+      image: "📊",
       page: <Calories />,
     },
     ,
@@ -34,7 +34,7 @@ function App() {
       page: <Recipes menu={setSelection} />,
     },
     {
-      name: "Contactenos",
+      name: "Información",
       image: "📩",
       page: <About />,
     },
