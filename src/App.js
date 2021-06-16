@@ -30,7 +30,7 @@ function App() {
     ,
     {
       name: "Recetas",
-      image: "📩",
+      image: "👨‍🍳",
       page: <Recipes menu={setSelection} />,
     },
     {
