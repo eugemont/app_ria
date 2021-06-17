@@ -27,16 +27,30 @@ export class Calories extends Component {
       let isAdded = false;
 
       item["ingredients"].map((ingredient, index2) => {
-        let cant = ingredient.search(words);
-        if (cant == words.length) {
-          searchedRecipe.push(item);
-          isAdded = true;
+        if (!isAdded) {
+          let cant = ingredient.toLowerCase().search(words.toLowerCase());
+          if (cant == 0) {
+            console.log("nom ingrediente");
+            console.log(item["name"]);
+            searchedRecipe.push(item);
+            isAdded = true;
+          }
         }
       });
       if (!isAdded) {
-        let cant2 = item["name"].search(words);
-        console.log(item["name"]);
-        if (cant2 == words.length) {
+        let cant2 = item["name"].toLowerCase().search(words.toLowerCase());
+        console.log(
+          item["name"],
+          " comparado ",
+          words,
+          "  ",
+          item["name"].toLowerCase().search(words.toLowerCase())
+        );
+        if (cant2 == 0) {
+          console.log("nom comida");
+
+          console.log(item["name"]);
+
           searchedRecipe.push(item);
         }
       }
@@ -283,21 +297,27 @@ export class Calories extends Component {
   }
   render() {
     return (
-    <div
-      className="center-board"
-      style={{
-        width: "100%",
-        height: "100%",
-        "padding-right": "15%",
-        "padding-left": "15%",
-      }}>
-      <input id="searchdata" className="board" style={{"text-align":"center"}}></input>
-      <div className="treat-wrapper">
-        <button onClick={this.buscarReceta} className="treat-button">Buscar</button>
+      <div
+        className="center-board"
+        style={{
+          width: "100%",
+          height: "100%",
+          "padding-right": "15%",
+          "padding-left": "15%",
+        }}
+      >
+        <input
+          id="searchdata"
+          className="board"
+          style={{ "text-align": "center" }}
+        ></input>
+        <div className="treat-wrapper">
+          <button onClick={this.buscarReceta} className="treat-button">
+            Buscar
+          </button>
+        </div>
+        {this.state.foodList}
       </div>
-      {this.state.foodList}
-      </div>
-
     );
   }
 }

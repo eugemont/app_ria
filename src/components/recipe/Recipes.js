@@ -31,20 +31,19 @@ const Recipes = (props) => (
             style={{ marginBottom: "2rem" }}
           >
             <div className="recipes__box">
-              <button onClick={() => handleClick(props, rawIngredients)} id="btn">
+              <button
+                onClick={() => handleClick(props, rawIngredients)}
+                id="btn"
+              >
                 Calcular nutrientes de esta receta
               </button>
               <div className="recipe__text">
-                <h5 className="recipes__title">
-                  {recipe.name.length < 20
-                    ? `${recipe.name}`
-                    : `${recipe.name.substring(0, 25)}...`}
-                </h5>
-                <p className="recipes__subtitle">
+                <h5 className="recipes__title">{recipe.name}</h5>
+                <p className="recipes__subtitle ingredients">
                   Ingredientes: <span>{ingredients}</span>
                 </p>
-                <p className="recipes__subtitle">
-                  <p>Procedimiento:</p>
+                <p className="recipes__instructions">
+                  <p className="procedimiento">Procedimiento:</p>
                   <span>{recipe.instructions}</span>
                 </p>
               </div>
