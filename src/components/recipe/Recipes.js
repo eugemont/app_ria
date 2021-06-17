@@ -24,6 +24,12 @@ const Recipes = (props) => (
           return <h6>{item}</h6>;
         });
         onlyOneClick = false;
+        let instructions = recipe.instructions.split("\n").map((line, i) => (
+          <span key={i}>
+            {line}
+            <br />
+          </span>
+        ));
         return (
           <div
             key={recipe.id}
@@ -44,7 +50,7 @@ const Recipes = (props) => (
                 </p>
                 <p className="recipes__instructions">
                   <p className="procedimiento">Procedimiento:</p>
-                  <span>{recipe.instructions}</span>
+                  <h5>{instructions}</h5>
                 </p>
               </div>
             </div>

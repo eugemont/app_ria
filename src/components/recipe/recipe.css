@@ -66,10 +66,11 @@
 }
 .procedimiento {
   font-size: 2.5rem;
+  white-space: pre-line;
 }
 .col-md-5 {
   margin: auto;
-  width: 100%;
+  width: 100% !important;
 }
 .ingredients {
   border: solid 2px #292525;
