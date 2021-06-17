@@ -6,7 +6,7 @@
   justify-content: center;
   flex-wrap: wrap;
   font-family: arial;
-  color: white;
+  color:  #292525;
 }
 .charts_orb .orb {
   padding: 20px;
@@ -49,7 +49,7 @@
   stroke: #2e2b2b;
 }
 .charts_orb svg circle.progress {
-  stroke: #ffffff;
+  stroke: #90C038;;
   transition: stroke-dashoffset 0.35s;
   stroke-dashoffset: 214.16;
   animation: NAME-YOUR-ANIMATION 1.5s forwards;
@@ -79,9 +79,9 @@
 .card {
   resize: both;
   overflow: auto;
-  background: #ffffff;
+  background:  #90C038;
   font-family: "Varela Round", sans-serif;
-  background: #90C038;
+  background: #f2f7eb;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   width: -webkit-max-content;
@@ -93,7 +93,7 @@
   /* 1/3 minus the margins (20+20) */
   padding: 20px;
   text-align: center;
-  color: white;
+  color: #292525;
   float: left;
   z-index: -1;
 }

@@ -32,7 +32,7 @@ export class About extends Component {
             <React.StrictMode>
                 <div>
                     <img id="foto" class="responsive" src={Logo}></img>
-                    <h2>En esta sección encontrarás información sobre cada uno de los nutrientes de tus alimentos</h2>
+                    <h2 style={{"margin-bottom": "20px"}}>En esta sección encontrarás información sobre cada uno de los nutrientes de tus alimentos</h2>
                 </div>
                 <section className="acordiones">
                     <div class="container">

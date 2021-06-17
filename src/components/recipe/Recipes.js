@@ -31,8 +31,8 @@ const Recipes = (props) => (
             style={{ marginBottom: "2rem" }}
           >
             <div className="recipes__box">
-              <button onClick={() => handleClick(props, rawIngredients)}>
-                Search data about this recipe
+              <button onClick={() => handleClick(props, rawIngredients)} id="btn">
+                Calcular nutrientes de esta receta
               </button>
               <div className="recipe__text">
                 <h5 className="recipes__title">
@@ -41,10 +41,10 @@ const Recipes = (props) => (
                     : `${recipe.name.substring(0, 25)}...`}
                 </h5>
                 <p className="recipes__subtitle">
-                  Ingredients: <span>{ingredients}</span>
+                  Ingredientes: <span>{ingredients}</span>
                 </p>
                 <p className="recipes__subtitle">
-                  <p>Instrucciones:</p>
+                  <p>Procedimiento:</p>
                   <span>{recipe.instructions}</span>
                 </p>
               </div>
