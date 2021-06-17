@@ -19,18 +19,28 @@ export class Calories extends Component {
     let searchedRecipe = [];
     let words = document.getElementById("searchdata").value;
     data.map((item, index) => {
+      let isAdded = false;
+
       item["ingredients"].map((ingredient, index2) => {
         let cant = ingredient.search(words);
         if (cant == words.length) {
           searchedRecipe.push(item);
+          isAdded = true;
         }
       });
+      if (!isAdded) {
+        let cant2 = item["name"].search(words);
+        console.log(item["name"]);
+        if (cant2 == words.length) {
+          searchedRecipe.push(item);
+        }
+      }
     });
-
+    console.log(searchedRecipe);
     this.setState({
       foodList: (
         <Recipes
-          recipes={data}
+          recipes={searchedRecipe}
           menu={this.props.menu}
           inputData={document.getElementById("searchdata").value}
         />
